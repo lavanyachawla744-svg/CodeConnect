@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeConnect</string>
+    <string name="tagline">Connect. Code. Compete.</string>
+    <string name="welcome_subtitle">Your gateway to coding platforms</string>
+
+    <!-- Sign In -->
+    <string name="sign_in_title">Welcome Back</string>
+    <string name="sign_in_subtitle">Sign in to continue your coding journey</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="sign_in_error">Sign-in failed. Please try again.</string>
+    <string name="signing_in">Signing you in…</string>
+
+    <!-- Dashboard -->
+    <string name="explore_platforms">Explore Platforms</string>
+    <string name="platform_linkedin">LinkedIn</string>
+    <string name="platform_github">GitHub</string>
+    <string name="platform_codechef">CodeChef</string>
+    <string name="platform_leetcode">LeetCode</string>
+    <string name="linkedin_desc">Professional Network</string>
+    <string name="github_desc">Code Repository</string>
+    <string name="codechef_desc">Competitive Coding</string>
+    <string name="leetcode_desc">Interview Prep</string>
+    <string name="compare_students">Compare Students</string>
+    <string name="compare_desc">Compare LeetCode profiles side by side</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!-- Compare -->
+    <string name="compare_title">LeetCode Comparison</string>
+    <string name="enter_username_1">LeetCode Username 1</string>
+    <string name="enter_username_2">LeetCode Username 2</string>
+    <string name="compare_btn">Compare</string>
+    <string name="comparing">Fetching data…</string>
+    <string name="total_solved">Total Solved</string>
+    <string name="easy_label">Easy</string>
+    <string name="medium_label">Medium</string>
+    <string name="hard_label">Hard</string>
+    <string name="error_empty_username">Please enter both usernames</string>
+    <string name="error_api">Could not fetch data. Check the username and try again.</string>
+    <string name="vs_label">VS</string>
+    <string name="winner_label">🏆 Winner</string>
+
+    <!-- URLs -->
+    <string name="url_linkedin">https://www.linkedin.com/login</string>
+    <string name="url_github">https://github.com/login</string>
+    <string name="url_codechef">https://www.codechef.com/login</string>
+    <string name="url_leetcode">https://leetcode.com/accounts/login/</string>
+
+    <!-- Dashboard - New Feature Cards -->
+    <string name="resume_builder">Resume Builder</string>
+    <string name="resume_builder_desc">Generate your professional resume</string>
+    <string name="skill_analytics">Skill Analytics</string>
+    <string name="skill_analytics_desc">Visualize your coding growth</string>
+    <string name="enhanced_compare">Profile Compare</string>
+    <string name="enhanced_compare_desc">Deep profile comparison</string>
+
+    <!-- Resume Builder -->
+    <string name="resume_title">Resume Builder</string>
+    <string name="resume_subtitle">Your portfolio data has been auto-magically analyzed. Select a template to generate your professional resume.</string>
+    <string name="layout_templates">LAYOUT TEMPLATES</string>
+    <string name="template_technical">Technical Modern</string>
+    <string name="template_technical_desc">Clean layout with skill bars</string>
+    <string name="template_minimalist">Minimalist Classic</string>
+    <string name="template_minimalist_desc">Simple and elegant design</string>
+    <string name="template_twocol">Two-Column Split</string>
+    <string name="template_twocol_desc">Balanced content layout</string>
+    <string name="visibility_settings">VISIBILITY SETTINGS</string>
+    <string name="include_skills">Include Skills Section</string>
+    <string name="include_education">Include Education</string>
+    <string name="include_projects">Include Projects</string>
+    <string name="export_pdf">Export as\nPDF</string>
+    <string name="export_pdf_short">Export PDF</string>
+    <string name="resume_preview">RESUME PREVIEW</string>
+    <string name="resume_role">Senior Software Engineer</string>
+    <string name="resume_location">Full-stack Developer · Architecture</string>
+    <string name="download_full_log">DOWNLOAD FULL LOG</string>
+
+    <!-- Skill Analytics -->
+    <string name="skill_analytics_title">Skill\nAnalytics</string>
+    <string name="skill_analytics_subtitle">Visualizing your technical evolution across core engineering domains and growth trajectories.</string>
+    <string name="expertise_matrix">Expertise Matrix</string>
+    <string name="expertise_desc">Performance across primary tech domains</string>
+    <string name="time_distribution">Time Distribution</string>
+    <string name="time_dist_desc">Weekly focus allocation</string>
+    <string name="dsa_leetcode">DSA &amp; Leetcode</string>
+    <string name="web_development">Web Development</string>
+    <string name="system_design">System Design</string>
+    <string name="weekly_growth">Weekly Growth</string>
+    <string name="weekly_growth_desc">Problems solved this week, day by day</string>
+    <string name="skill_dsa">DSA</string>
+    <string name="skill_webdev">Web Dev</string>
+    <string name="skill_sysdesign">Sys Design</string>
+    <string name="skill_ml">ML/AI</string>
+    <string name="skill_devops">DevOps</string>
+    <string name="label_intermediate">INTERMEDIATE</string>
+
+    <!-- Enhanced Profile Compare -->
+    <string name="profile_tab">Profile</string>
+    <string name="compare_tab">Compare</string>
+    <string name="milestones_tab">Milestones</string>
+    <string name="settings_tab">Settings</string>
+    <string name="coding_platform_stats">CODING PLATFORM STATS</string>
+    <string name="leetcode_solved">LEETCODE SOLVED</string>
+    <string name="codechef_rating">CODECHEF RATING</string>
+    <string name="github_repos">GITHUB REPOS</string>
+    <string name="skill_radar">SKILL RADAR ARCHITECTURE</string>
+    <string name="connected_platforms">CONNECTED PLATFORMS</string>
+    <string name="compare_another">Compare Another Profile</string>
+    <string name="kinetic_timeline">KINETIC ACTIVITY TIMELINE</string>
+    <string name="user1_default">Alex Rivera</string>
+    <string name="user2_default">Jordan Smith</string>
+    <string name="user1_role">SENIOR SOFTWARE ENGINEER</string>
+    <string name="user2_role">STAFF PLATFORM DEVELOPER</string>
+    <string name="senior_dev">Senior Developer</string>
+    <string name="junior_dev">Junior Developer</string>
+</resources>

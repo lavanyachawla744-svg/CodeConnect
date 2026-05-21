@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="@color/text_secondary" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/resume_title"
+            android:textColor="@color/primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Fill in your details below to build your resume"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- ===== YOUR INFO SECTION ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:letterSpacing="0.1"
+            android:text="YOUR INFORMATION"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/input_background"
+            android:hint="Full Name *"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Role -->
+        <EditText
+            android:id="@+id/etRole"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Job Title / Role  (e.g. Software Engineer)"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Location  (e.g. New Delhi, India)"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Skills -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.1"
+            android:text="SKILLS"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="e.g. Java, Python, Android, SQL, Data Structures"
+            android:inputType="text"
+            android:minHeight="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Experience -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.1"
+            android:text="EXPERIENCE"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etExperience1Title"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Company · Job Title  (e.g. Google · SDE Intern)"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etExperience1Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Describe your role, achievements, impact..."
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="2"
+            android:minHeight="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etExperience2Title"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Company · Job Title  (optional, 2nd experience)"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etExperience2Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Describe this role..."
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="2"
+            android:minHeight="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Education -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.1"
+            android:text="EDUCATION"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEduDegree"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:hint="Degree  (e.g. B.Tech Computer Science)"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEduInstitute"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Institution  (e.g. IIT Delhi)"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEduYear"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Year  (e.g. 2021-2025)"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Projects -->
+        <EditText
+            android:id="@+id/etProject1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Project 1  (name and brief description)"
+            android:inputType="textCapSentences"
+            android:minHeight="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etProject2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_background"
+            android:hint="Project 2  (optional)"
+            android:inputType="textCapSentences"
+            android:minHeight="52dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <!-- ===== LAYOUT TEMPLATES ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:letterSpacing="0.1"
+            android:text="@string/layout_templates"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Template 1 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTemplate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/bg_card_elevated"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/primary" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/template_technical" android:textColor="@color/text_primary"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" android:text="@string/template_technical_desc"
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+                </LinearLayout>
+                <View android:id="@+id/radio1" android:layout_width="20dp" android:layout_height="20dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/primary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Template 2 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTemplate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/text_secondary" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/template_minimalist" android:textColor="@color/text_primary"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" android:text="@string/template_minimalist_desc"
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+                </LinearLayout>
+                <View android:id="@+id/radio2" android:layout_width="20dp" android:layout_height="20dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/divider" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Template 3 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTemplate3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/text_secondary" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/template_twocol" android:textColor="@color/text_primary"
+                        android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" android:text="@string/template_twocol_desc"
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+                </LinearLayout>
+                <View android:id="@+id/radio3" android:layout_width="20dp" android:layout_height="20dp"
+                    android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/divider" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ===== SECTION TOGGLES ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:letterSpacing="0.1"
+            android:text="@string/visibility_settings"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Include Skills &amp; Experience" android:textColor="@color/text_primary" android:textSize="14sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchSkills"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true" app:thumbTint="@color/primary" app:trackTint="@color/divider" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/include_education" android:textColor="@color/text_primary" android:textSize="14sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchEducation"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true" app:thumbTint="@color/primary" app:trackTint="@color/divider" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/include_projects" android:textColor="@color/text_primary" android:textSize="14sp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchProjects"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="false" app:thumbTint="@color/primary" app:trackTint="@color/divider" />
+        </LinearLayout>
+
+        <!-- ===== LIVE PREVIEW CARD ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:letterSpacing="0.1"
+            android:text="RESUME PREVIEW"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardResumePreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="24dp">
+
+                <!-- Profile Header Row -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:gravity="center_vertical" android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivResumePhoto"
+                        android:layout_width="64dp" android:layout_height="64dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:civ_border_color="@color/primary" app:civ_border_width="2dp" />
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvResumeName"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Your Name"
+                            android:textColor="@color/text_primary" android:textSize="20sp" android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvResumeRole"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Your Role / Title"
+                            android:textColor="@color/primary" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Export Button -->
+                    <LinearLayout
+                        android:id="@+id/btnExportPdf"
+                        android:layout_width="60dp" android:layout_height="60dp"
+                        android:background="@drawable/export_btn_bg"
+                        android:gravity="center" android:orientation="vertical"
+                        android:clickable="true" android:focusable="true">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:gravity="center" android:text="@string/export_pdf"
+                            android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:layout_marginTop="16dp" android:layout_marginBottom="8dp"
+                    android:background="@color/divider" />
+
+                <!-- Contact info -->
+                <TextView
+                    android:id="@+id/tvResumeSubtitle"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Location · Phone · Email"
+                    android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+                <!-- Skills + Experience Section -->
+                <LinearLayout
+                    android:id="@+id/layoutSkillsPreview"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Skills" android:textColor="@color/text_primary"
+                        android:textSize="13sp" android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewSkills"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="e.g. Java, Python, Android, SQL"
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Experience" android:textColor="@color/text_primary"
+                        android:textSize="13sp" android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewExp1Title"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Company · Job Title"
+                        android:textColor="@color/text_primary" android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewExp1Desc"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Describe your role and achievements"
+                        android:textColor="@color/text_secondary" android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewExp2Title"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text=""
+                        android:textColor="@color/text_primary" android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewExp2Desc"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textColor="@color/text_secondary" android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Education Section -->
+                <LinearLayout
+                    android:id="@+id/layoutEducationPreview"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Education" android:textColor="@color/text_primary"
+                        android:textSize="13sp" android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewEduDegree"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Degree / Course"
+                        android:textColor="@color/text_primary" android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewEduInstitute"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Institution · Year"
+                        android:textColor="@color/text_secondary" android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Projects Section (hidden by default) -->
+                <LinearLayout
+                    android:id="@+id/layoutProjectsPreview"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Projects" android:textColor="@color/text_primary"
+                        android:textSize="13sp" android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewProject1"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Project 1 name &amp; description"
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvPreviewProject2"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        android:textColor="@color/text_secondary" android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <View android:layout_width="match_parent" android:layout_height="32dp" />
+
+    </LinearLayout>
+</ScrollView>

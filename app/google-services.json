@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "453229760024",
+    "project_id": "studentapp-e9726",
+    "storage_bucket": "studentapp-e9726.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453229760024:android:91ad6eb0ecff78c1e03d6d",
+        "android_client_info": {
+          "package_name": "com.codeconnect.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453229760024-ndric80g0e68qmq49ncn1seibuco5ls8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codeconnect.app",
+            "certificate_hash": "d17bcc4aa7527fda159b9557c8639df6bb483e4d"
+          }
+        },
+        {
+          "client_id": "453229760024-k9k32qssvrlvj47au6gk6ubed2eo3ovs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_54J_xgIt3D0nNeRVKqnbzbbCbg3X9PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453229760024-k9k32qssvrlvj47au6gk6ubed2eo3ovs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453229760024:android:c3df837f9c98ab49e03d6d",
+        "android_client_info": {
+          "package_name": "com.example.studentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453229760024-k9k32qssvrlvj47au6gk6ubed2eo3ovs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_54J_xgIt3D0nNeRVKqnbzbbCbg3X9PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453229760024-k9k32qssvrlvj47au6gk6ubed2eo3ovs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

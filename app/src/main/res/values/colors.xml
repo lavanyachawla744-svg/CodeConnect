@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="primary_light">#8B83FF</color>
+    <color name="accent">#FF6584</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_dark">#0D1117</color>
+    <color name="bg_card">#161B22</color>
+    <color name="bg_card_elevated">#1C2333</color>
+    <color name="bg_surface">#21262D</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F0F6FC</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_hint">#484F58</color>
+
+    <!-- Platform Colors -->
+    <color name="linkedin">#0A66C2</color>
+    <color name="github">#238636</color>
+    <color name="codechef">#C4733B</color>
+    <color name="leetcode">#FFA116</color>
+
+    <!-- Difficulty Colors -->
+    <color name="easy">#00B8A3</color>
+    <color name="medium">#FFC01E</color>
+    <color name="hard">#FF375F</color>
+
+    <!-- Utility -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="divider">#30363D</color>
+    <color name="winner_glow">#2E6C63FF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Gradient Welcome -->
+    <color name="gradient_start">#0D1117</color>
+    <color name="gradient_mid">#161B35</color>
+    <color name="gradient_end">#1A1040</color>
+
+    <!-- Charts -->
+    <color name="chart_purple">#7C6FFF</color>
+    <color name="chart_blue">#4A9EFF</color>
+    <color name="chart_green">#34D399</color>
+    <color name="error">#FF6B6B</color>
+    <color name="chart_yellow">#FBBF24</color>
+    <color name="chart_pink">#F472B6</color>
+    <color name="chart_grid">#2A2F3A</color>
+
+    <!-- Radar Chart -->
+    <color name="radar_fill_1">#407C6FFF</color>
+    <color name="radar_stroke_1">#7C6FFF</color>
+    <color name="radar_fill_2">#404A9EFF</color>
+    <color name="radar_stroke_2">#4A9EFF</color>
+
+    <!-- Bar Chart -->
+    <color name="bar_gradient_start">#6C63FF</color>
+    <color name="bar_gradient_end">#8B83FF</color>
+    <color name="bar_inactive">#2A2F3A</color>
+
+    <!-- Resume -->
+    <color name="resume_bg">#FFFFFF</color>
+    <color name="resume_text">#1A1A2E</color>
+    <color name="resume_accent">#6C63FF</color>
+    <color name="resume_secondary">#64748B</color>
+
+    <!-- Compare Enhanced -->
+    <color name="compare_user1">#7C6FFF</color>
+    <color name="compare_user2">#4A9EFF</color>
+    <color name="tab_active">#6C63FF</color>
+    <color name="tab_inactive">#21262D</color>
+    <color name="timeline_line">#30363D</color>
+    <color name="badge_vs">#FF6584</color>
+</resources>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!-- Tab Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1"
+                android:layout_marginEnd="4dp" android:background="@drawable/tab_inactive_bg"
+                android:gravity="center" android:text="@string/profile_tab"
+                android:textColor="@color/text_secondary" android:textSize="12sp" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1"
+                android:layout_marginEnd="4dp" android:background="@drawable/tab_active_bg"
+                android:gravity="center" android:text="@string/compare_tab"
+                android:textColor="@color/white" android:textSize="12sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1"
+                android:layout_marginEnd="4dp" android:background="@drawable/tab_inactive_bg"
+                android:gravity="center" android:text="@string/milestones_tab"
+                android:textColor="@color/text_secondary" android:textSize="12sp" />
+            <TextView android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1"
+                android:background="@drawable/tab_inactive_bg" android:gravity="center"
+                android:text="@string/settings_tab" android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- Dual Profile Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!-- User 1 -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUser1Photo" android:layout_width="72dp" android:layout_height="72dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    app:civ_border_color="@color/compare_user1" app:civ_border_width="2dp" />
+                <TextView android:id="@+id/tvUser1Name" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                    android:text="@string/user1_default" android:textColor="@color/text_primary"
+                    android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvUser1Role" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="2dp"
+                    android:text="@string/user1_role" android:textColor="@color/text_secondary"
+                    android:textSize="9sp" android:letterSpacing="0.05" />
+            </LinearLayout>
+            <!-- VS Badge -->
+            <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginHorizontal="8dp">
+                <View android:layout_width="44dp" android:layout_height="44dp"
+                    android:background="@drawable/vs_badge_bg" />
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:gravity="center" android:text="VS" android:textColor="@color/badge_vs"
+                    android:textSize="14sp" android:textStyle="bold" />
+            </FrameLayout>
+            <!-- User 2 -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUser2Photo" android:layout_width="72dp" android:layout_height="72dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    app:civ_border_color="@color/compare_user2" app:civ_border_width="2dp" />
+                <TextView android:id="@+id/tvUser2Name" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                    android:text="@string/user2_default" android:textColor="@color/text_primary"
+                    android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvUser2Role" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="2dp"
+                    android:text="@string/user2_role" android:textColor="@color/text_secondary"
+                    android:textSize="9sp" android:letterSpacing="0.05" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:layout_marginTop="20dp" android:background="@color/divider" />
+        <!-- CODING PLATFORM STATS -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:letterSpacing="0.1"
+            android:text="@string/coding_platform_stats" android:textColor="@color/text_secondary"
+            android:textSize="11sp" android:textStyle="bold" />
+        <!-- LeetCode Solved -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/bg_card" app:cardCornerRadius="16dp"
+            app:cardElevation="0dp" app:strokeColor="@color/divider" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/leetcode_solved" android:textColor="@color/text_secondary"
+                    android:textSize="10sp" android:letterSpacing="0.1" android:textStyle="bold" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <ProgressBar android:id="@+id/pbLcUser1" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:layout_marginEnd="8dp" android:max="2000" android:progress="1248"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user1" />
+                    <ProgressBar android:id="@+id/pbLcUser2" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:max="2000" android:progress="892"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user2" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/tvLcUser1" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="1,248" android:textColor="@color/compare_user1"
+                        android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvLcUser2" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="end" android:text="892"
+                        android:textColor="@color/compare_user2" android:textSize="16sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- CodeChef Rating -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/bg_card" app:cardCornerRadius="16dp"
+            app:cardElevation="0dp" app:strokeColor="@color/divider" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/codechef_rating" android:textColor="@color/text_secondary"
+                    android:textSize="10sp" android:letterSpacing="0.1" android:textStyle="bold" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <ProgressBar android:id="@+id/pbCcUser1" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:layout_marginEnd="8dp" android:max="3000" android:progress="2150"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user1" />
+                    <ProgressBar android:id="@+id/pbCcUser2" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:max="3000" android:progress="2380"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user2" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/tvCcUser1" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="2,150" android:textColor="@color/compare_user1"
+                        android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvCcUser2" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="end" android:text="2,380"
+                        android:textColor="@color/compare_user2" android:textSize="16sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- GitHub Repos -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/bg_card" app:cardCornerRadius="16dp"
+            app:cardElevation="0dp" app:strokeColor="@color/divider" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/github_repos" android:textColor="@color/text_secondary"
+                    android:textSize="10sp" android:letterSpacing="0.1" android:textStyle="bold" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:orientation="horizontal">
+                    <ProgressBar android:id="@+id/pbGhUser1" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:layout_marginEnd="8dp" android:max="100" android:progress="52"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user1" />
+                    <ProgressBar android:id="@+id/pbGhUser2" style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="0dp" android:layout_height="10dp" android:layout_weight="1"
+                        android:max="100" android:progress="38"
+                        android:progressDrawable="@drawable/progress_track" android:progressTint="@color/compare_user2" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/tvGhUser1" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="5.2K" android:textColor="@color/compare_user1"
+                        android:textSize="16sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvGhUser2" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:gravity="end" android:text="3.8K"
+                        android:textColor="@color/compare_user2" android:textSize="16sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- SKILL RADAR -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:letterSpacing="0.1"
+            android:text="@string/skill_radar" android:textColor="@color/text_secondary"
+            android:textSize="11sp" android:textStyle="bold" />
+        <com.codeconnect.app.RadarChartView
+            android:id="@+id/compareRadarChart" android:layout_width="match_parent"
+            android:layout_height="280dp" android:layout_marginTop="12dp" />
+        <!-- User Legend -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center" android:orientation="horizontal">
+            <View android:layout_width="10dp" android:layout_height="10dp"
+                android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/compare_user1" />
+            <TextView android:id="@+id/tvUser1Legend" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="6dp" android:layout_marginEnd="20dp"
+                android:text="User 1" android:textColor="@color/text_secondary" android:textSize="11sp" />
+            <View android:layout_width="10dp" android:layout_height="10dp"
+                android:background="@drawable/circle_icon_bg" android:backgroundTint="@color/compare_user2" />
+            <TextView android:id="@+id/tvUser2Legend" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="6dp" android:text="User 2"
+                android:textColor="@color/text_secondary" android:textSize="11sp" />
+        </LinearLayout>
+        <!-- CONNECTED PLATFORMS -->
+        <TextView android:id="@+id/tvUser1PlatformLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:letterSpacing="0.1"
+            android:text="USER 1\'S CONNECTED PLATFORMS" android:textColor="@color/text_secondary"
+            android:textSize="10sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:orientation="horizontal">
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/chip_background"
+                android:gravity="center" android:text="G" android:textColor="@color/github"
+                android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/chip_background"
+                android:gravity="center" android:text="in" android:textColor="@color/linkedin"
+                android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/chip_background"
+                android:gravity="center" android:text="LC" android:textColor="@color/leetcode"
+                android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/chip_background" android:gravity="center"
+                android:text="CC" android:textColor="@color/codechef"
+                android:textSize="14sp" android:textStyle="bold" />
+        </LinearLayout>
+        <TextView android:id="@+id/tvUser2PlatformLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:letterSpacing="0.1"
+            android:text="USER 2\'S CONNECTED PLATFORMS" android:textColor="@color/text_secondary"
+            android:textSize="10sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:orientation="horizontal">
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/chip_background"
+                android:gravity="center" android:text="G" android:textColor="@color/github"
+                android:textSize="18sp" android:textStyle="bold" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:layout_marginEnd="8dp" android:background="@drawable/chip_background"
+                android:gravity="center" android:text="in" android:textColor="@color/linkedin"
+                android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:layout_width="44dp" android:layout_height="44dp"
+                android:background="@drawable/chip_background" android:gravity="center"
+                android:text="LC" android:textColor="@color/leetcode"
+                android:textSize="14sp" android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Compare Another Profile Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompareAnother" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary" android:text="@string/compare_another"
+            android:textColor="@color/white" android:textSize="14sp"
+            app:cornerRadius="14dp" />
+        <!-- KINETIC ACTIVITY TIMELINE -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:letterSpacing="0.1"
+            android:text="@string/kinetic_timeline" android:textColor="@color/text_secondary"
+            android:textSize="11sp" android:textStyle="bold" />
+        <!-- Timeline entries -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:orientation="horizontal">
+            <!-- User 1 Timeline -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="8dp" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View android:layout_width="8dp" android:layout_height="8dp"
+                        android:layout_marginTop="6dp" android:layout_marginEnd="8dp"
+                        android:background="@drawable/timeline_dot" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="NEW CERTIFICATION" android:textColor="@color/compare_user1"
+                            android:textSize="9sp" android:letterSpacing="0.05" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Deployed v2.0.1 at PlatformX UI Library"
+                            android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Large scale, #DevOps"
+                            android:textColor="@color/text_secondary" android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="1dp" android:layout_height="20dp"
+                    android:layout_marginStart="4dp" android:background="@color/timeline_line" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View android:layout_width="8dp" android:layout_height="8dp"
+                        android:layout_marginTop="6dp" android:layout_marginEnd="8dp"
+                        android:background="@drawable/timeline_dot" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="PUBLISHED" android:textColor="@color/chart_green"
+                            android:textSize="9sp" android:letterSpacing="0.05" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Published &quot;Tool for Automation&quot; Guide"
+                            android:textColor="@color/text_primary" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- User 2 Timeline -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="8dp" android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View android:layout_width="8dp" android:layout_height="8dp"
+                        android:layout_marginTop="6dp" android:layout_marginEnd="8dp"
+                        android:background="@drawable/timeline_dot" android:backgroundTint="@color/compare_user2" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="NEW DEPLOYMENT" android:textColor="@color/compare_user2"
+                            android:textSize="9sp" android:letterSpacing="0.05" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Deployed v2.x at PlantForU UI Library"
+                            android:textColor="@color/text_primary" android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Scale 5x, #APIs"
+                            android:textColor="@color/text_secondary" android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="1dp" android:layout_height="20dp"
+                    android:layout_marginStart="4dp" android:background="@color/timeline_line" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <View android:layout_width="8dp" android:layout_height="8dp"
+                        android:layout_marginTop="6dp" android:layout_marginEnd="8dp"
+                        android:background="@drawable/timeline_dot" android:backgroundTint="@color/compare_user2" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="WON TOGETHER 2025" android:textColor="@color/chart_yellow"
+                            android:textSize="9sp" android:letterSpacing="0.05" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:text="Won hackathon for peer-to-peer system"
+                            android:textColor="@color/text_primary" android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="40dp" />
+    </LinearLayout>
+</ScrollView>
